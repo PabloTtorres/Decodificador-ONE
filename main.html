@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.google.com/specimen/Inter?query=inter" rel = "stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Decodificador ONE</title>
+</head>
+<body>
+    <div class="Cuerpo">
+        <div class="Logo">
+            <img class="Logoo" src="./Imagenes/Logo.png" alt="Logo">
+        </div>
+        <div class="Cuadro-texto"> 
+           <textarea type="text" placeholder="Ingrese el texto aqui" rows="5" id="Input"></textarea>
+        </div>
+        <div class="Botones">
+            <div class="Letrero">
+                <img src="./Imagenes/Vector.png" alt="">
+                <p>Solo letras minúsculas y sin acentos.</p>
+            </div>
+            <div class="Flex">  
+                <button class="Boton1" id="Encriptar" onclick="Input()"><span>Encriptar</span></button>
+                <button class="Boton2" id="Desencriptar" onclick="Desencriptar()"><span>Desencriptar</span></button>
+            </div>
+        </div>
+        
+        <div class="Rectangulo"> 
+            <div class="Texto-cuadro" id="Cuadro">
+                <div>
+                    <img src="./Imagenes/Muñeco.png" alt="Personaje">
+                    <h1>Ningún mensaje fue encontrado</h1>
+                    <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div> 
+            </div>
+            
+            <article class="Texto-resultado" id="Resultado"> 
+                <h1 class="Mensaje-resultado" id="Mensaje"></h1>
+                <a id="Copiar" class="Boton3" onclick="Copiar()">Copiar</a>
+            </article>
+        
+        </div>
+
+    </div>
+</body>
+    <footer class="Pie-pagina">
+        <p>Hecho por Pablo Torres 🙂</p>
+        <p>Sigueme en Twitter! 🐦 <a href="https://twitter.com/otrovatodev"class="Twitter">@otrovatodev</a> 🤓</p>
+        <script src="code.js"></script>
+    </footer>
+</html>
